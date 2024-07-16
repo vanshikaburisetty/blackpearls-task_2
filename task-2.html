@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>website using bootstrap</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+    background-color: #2f2f2f;
+  }
+  
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  
+#first {
+    font-size: large;
+    font-weight: bolder;
+    font-style: italic;
+    
+}
+.bg {
+    background-color: black;
+    color:#fff;
+}
+
+  .bg-1 { 
+    background-image: url('images/doremon_background.webp');
+    color: black;
+  }
+  .bg-2 { 
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+  }
+  .bg-3 { 
+    background-color:black; /* White */
+    color: aqua;
+  }
+  .bg-4 { 
+    background-color: #2f2f2f; /* Black Gray */
+    color: #fff;
+  }
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 10;
+    border-radius: 10;
+    margin-bottom: 10;
+    font-size: 12px;
+    letter-spacing: 5px;
+    display:block;
+  }
+  .navbar-nav  li a:hover {
+    background-color: #1abc9c !important;
+
+  }
+  .responsive {
+    width: 100%;
+    height: auto;
+  }
+  .gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.gallery-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.hi{
+    background-color: black;
+    color:white;
+    font-family:helvetica;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+
+    }
+.hi:hover {
+    background-color: aqua;
+    color:black;
+    cursor:hand;
+    font-family:helvetica;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    }
+  .contact{
+    background-color: black;
+    color:white;
+    font-family:helvetica;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+
+  }
+  .contact-form{
+    background-color:white;
+    color:black;
+    font-family:helvetica;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+
+  }
+@media (max-width: 768px) {
+    .gallery-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+  
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default bg">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+        <span class="icon-bar"></span> 
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                    
+      </button>
+      <a class="navbar-brand" href="#">HOME</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">About</a></li>
+        <li><a href="#history">History</a></li>
+        <li><a href="#characters">Characters</a></li>
+        <li><a href="#movies">Movies</a></li>
+        <li><a href="#merchandise">Merchandise</a></li>
+        <li><a href="#Contact">Contact us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
+<section id="about">
+    <div class="container-fluid bg-1 text-center">
+        <h1 class="margin">Doremon</h1>
+        <p id="first">Doraemon (ドラえもん) is a Japanese manga series written and illustrated by Fujiko F. Fujio. The manga was first serialized in 1969. Its chapters were collected in 45 tankōbon volumes published by Shogakukan from 1974 to 1996. The story revolves around an earless robotic cat named Doraemon, who travels back in time from the 22nd century to aid a boy named Nobita Nobi.Doraemon is mainly aimed at children, so Fujio chose to create the character with a simple graphic style, based on shapes such as circles and ellipses. Frequently displayed in its stories is Nobita's desire to control time, and there exist time-control gadgets that he uses to satisfy that desire, particularly the "Time Machine", which lies in his desk drawer.</p>
+        
+      </div>
+</section>
+
+
+<!-- Second Container -->
+<section id="history">
+    <div class="container-fluid bg-2 t">
+        <h3>Doremon,The Original Story</h3>
+        <br>
+        <img align=right src="images/nobita.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
+        <p>Nobita Nobi a famous television character was actually a real
+            character, his real name was Nobita Hiroshi who lived in
+            Japan and was 9 years old. He used to get beaten and
+            disturbed by his friends as shown on TV.
+            Once he found a cat which looked like a racoon dog, he
+            made him his pet and named him Doremon. Once Doremon
+            died in a road accident, which made Nobita very sad and
+            depressed.</p>
+            <p>He had a disease called Schizophrenia, which made him give
+            rise to Doremon as a 22nd-century robot when he was in a
+            coma.He used to narrate his life with Doremon to the doctors, but
+            they said he was in a coma for months and Doremon was a
+            fragment of his imagination.</p>
+            <p>This made him very depressed again that whom he used to
+            stay with shared his sorrow and laughed together was simply
+            a fragment of his imagination.
+            When he was 16 years his depression made him shoot him
+            and commit suicide due to his mental pain.After a few months, Fujiko Fujio the director of the current
+            Doremon Scerues heard about the news and reached the
+            doctor and his family and asked about Nobita’s imaginary
+            world.</p>
+            <p>Then he noted all the story in his notebook and made the
+            series and build the character of Doremon.
+            </p>
+      </div>
+</section>
+
+<!-- Third Container (Grid) -->
+<section id="characters">
+    <div class="container-fluid bg-4 text-center  ">
+        <h2 align="text-center"> Characters</h2>
+        <div class="row">
+    
+          <div class="col-sm-4">
+            <h3>Doremon</h3>
+            <img src="images/doremon.jpg" class="responsive" style="width:100%" alt="Nature" width="350" height="350" >
+            <br>
+            <p>Doraemon is a male robotic earless cat that travels back in time from the 22nd century to aid a preteen boy named Nobita.Doraemon, Nobita, and their friends embark on time-traveling adventures which mostly break the laws of time.His favorite food is Dorayaki. Most of the times, Nobita saves Doraemon in such situations. Although he has no fingers in most media(Although sometimes bumps looking like fingers are shown in his round hands), he can hold things because of the suction cups in his hands. His favorite food is Dorayaki or Doracake. He has been shown to date a normal female cat called Mi Chan </p>
+        </div>
+          <div class="col-sm-4"> 
+            <h3>Nobita</h3>
+            <img src="images/nobita1.jpeg" class="img-responsive margin" style="width:100%" alt="Nature" width="350" height="350">
+            <br>
+            <p>Nobita is the hero at best and the villain at worst. At the beginning of the series, Nobita is a rather lazy person who has a cycle of constantly napping after school, keeping him up late when he wakes up late for school. This cycle of laziness occurs almost every day, keeping him up late at night and wake up late the next morning, hindering him academically. Nobita is very dependent on Doraemon and begs for multiple things, much to his disapproval. Many things that Nobita wishes for include; vengeance on his bullies, a better product than what Suneo brags about, and privileges.</p>
+        </div>
+          <div class="col-sm-4">
+            <h3>suzuka</h3> 
+            <img src="images/suzuka.png" class="img-responsive margin" style="width:100%" alt="Nature width="350" height="350">
+            <br>
+            <p>Shizuka Minamoto (源 静香, Minamoto Shizuka), nicknamed Shizuka-chan is a smart, kind and pretty girl.She is Nobita's best friend and love-interest. She does not shun Nobita due to his failing grades, lazy disposition or constant failures.Shizuka is an animal lover and keeps two pets at home: a dog, who is saved from succumbing to illness by Nobita and Doraemon in one story; and a canary which runs away on multiple occasions and causes Shizuka and Nobita to run around the city chasing it down.Besides Nobita, Shizuka is also close to her classmate and popular student Dekisugi.</p>
+        </div>
+          
+        </div>
+        <div class="col-sm-4">
+            <h3>geon</h3>
+            <img src="images/geon.jpeg" class="img-responsive margin" style="width:100%" alt="Nature" width="350" height="350">
+            <br>
+            <p>Takeshi Goda (剛田 武, Gōda Takeshi) usually known by the nickname "Gian" (「ジャイアン」, "Jaian", English: Big G) is a strong and quick-tempered local bully. He frequently steals other children's stuff (especially Nobita's and Suneo's) under the pretext of "borrowing" them, unless the toy is damaged. He is known for his awful singing voice, though he considers himself a great singer. To prove this, Gian sometimes "invites" others to attend his concerts, under the threat of beatings.</p>
+        </div>
+          <div class="col-sm-4">
+            <h3>sunio</h3>
+            <img src="images/suneo.webp" class="img-responsive margin" style="width:100%" alt="Nature" width="350" height="350">
+            <br>
+            <p>Suneo Honekawa (骨川 スネ夫, Honekawa Suneo) is the fox-faced (inherited from his mother) rich child who loves to flaunt his material wealth before everyone, especially Nobita. A lot of the stories start with Suneo showing off some new video game, toy or pet which evokes Nobita's envy. He is often seen with Gian, teasing Nobita. He also often pushes Nobita aside with silly excuses while he invites Gian and Shizuka to his parties or resorts. However, he is actually one of Nobita's closest friends, who would often ask for his and Doraemon's help.</p>
+        </div>
+      </div>
+</section>
+
+
+<!--movies-->
+<section id="movies">
+  <h1>Movies</h1>
+  <br>
+  <div class="gallery-container">
+      <img src="images/movie1.jpeg" alt="movie 1">
+      <img src="images/movie2.jpeg" alt="movie 2">
+      <img src="images/movie3.jpeg" alt="movie 3">
+      <img src="images/movie4.jpeg" alt="movie 4">
+      <img src="images/movie5.jpeg" alt="movie 5">
+      <img src="images/movie6.jpeg" alt="movie 6">
+      <img src="images/movie7.jpeg" alt="movie 7">
+      <img src="images/movie8.jpeg" alt="movie 8">
+      <img src="images/movie9.jpeg" alt="movie 9">
+      <img src="images/movie10.jpeg" alt="movie 10">
+      <img src="images/movie11.jpeg" alt="movie 11">
+      <img src="images/movie12.jpeg" alt="movie 12">
+      <img src="images/movie13.jpeg" alt="movie 13">
+  </div>
+</section>
+
+
+<!-- merchandise-->
+<section id="merchandise">
+  <h1>Merchandise</h1>
+  <br>
+  <div class="row">
+    <span ><a href="https://www.amazon.in/doraemon/s?k=doraemon" class="hi">Amazon link</a></span>
+    <span ><a href="https://toyzone.in/collections/doraemon" class="hi">Toy zone link</a></span>
+    <span ><a href="https://www.firstcry.com/doraemon/0/0/76" class="hi">First cry link </a></span>
+    <span ><a href="https://thepeppystore.in/collections/all/doraemon" class="hi">The peppy store link </a></span>
+    <span ><a href="https://www.flipkart.com/search?q=doraemon&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off&as-pos=1&as-type=HISTORY" class="hi">flipkart link </a>
+  </span>
+  <img align=right src="images/merchandise.jpeg" class="img-responsive img-circle margin" style="display:inline" alt="merchandise" width="350" height="350">
+
+</section>
+<!-- Contact ussss-->
+<section id="Contact" class="contact">
+  <h2>Contact Us</h2>
+  <form action="#" method="post" class="contact-form">
+      <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" required>
+      </div>
+      <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>A simple website made by using Bootstrap</p> 
+</footer>
+
+</body>
+</html>
